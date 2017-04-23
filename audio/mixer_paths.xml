@@ -168,7 +168,7 @@
     </path>
 
     <path name="gain-media-speaker">
-        <ctl name="Speaker Digital Volume" value="112" />
+        <ctl name="Speaker Digital Volume" value="122" />
         <ctl name="SPKOUTL Input 1 Volume" value="32" />
         <ctl name="SPKOUTL Input 2 Volume" value="32" />
     </path>
