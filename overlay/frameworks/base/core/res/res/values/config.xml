@@ -305,4 +305,7 @@
     <!-- Configuartion to support SIM contact batch operation.-->
     <bool name="config_sim_phonebook_batch_operation">false</bool>
 
+    <!-- Allow the flashlight to use wakelocks -->
+    <bool name="config_useWakeLockForFlashlight">true</bool>
+
 </resources>
