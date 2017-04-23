@@ -101,6 +101,7 @@ CHARGING_ENABLED_PATH := "/sys/class/power_supply/battery/batt_lp_charging"
 
 # CMHW
 BOARD_HARDWARE_CLASS := hardware/samsung/cmhw
+BOARD_HARDWARE_CLASS += device/samsung/i9500/cmhw
 
 # Filesystems
 BLOCK_BASED_OTA := false
