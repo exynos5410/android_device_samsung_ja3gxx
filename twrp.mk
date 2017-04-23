@@ -6,9 +6,6 @@ RECOVERY_VARIANT := twrp
 
 TARGET_RECOVERY_DEVICE_MODULES += init.recovery.usb.rc
 
-# Do not link again libion_exynos.so
-BOARD_NEEDS_MEMORYHEAPION := false
-
 BOARD_HAS_NO_REAL_SDCARD := true
 RECOVERY_SDCARD_ON_DATA := true
 
