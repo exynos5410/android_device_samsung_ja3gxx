@@ -410,6 +410,19 @@ on boot
     write /sys/class/mdnie/mdnie/scenario 0
     write /sys/class/mdnie/mdnie/mode 0
 
+# Reduce Power Usage while booting
+    write /sys/class/backlight/panel/brightness 10
+
+    write /proc/sys/kernel/randomize_va_space 0
+    write /sys/class/devfreq/exynos5-busfreq-mif/polling_interval 50
+    write /sys/class/devfreq/exynos5-busfreq-mif/time_in_state/upthreshold 70
+
+    write /sys/devices/platform/pvrsrvkm.0/sgx_dvfs_min_lock 177
+    write /sys/devices/platform/pvrsrvkm.0/sgx_dvfs_max_lock 266
+
+    write /sys/class/devfreq/exynos5-busfreq-mif/min_freq 100000
+    write /sys/class/devfreq/exynos5-busfreq-mif/max_freq 800000
+
 on charger
 # Set CPU governor to powersave
     write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor ondemand
