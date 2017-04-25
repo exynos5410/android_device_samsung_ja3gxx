@@ -504,3 +504,5 @@ on property:sys.boot_completed=1
     setprop sys.perf.profile 1
 # Disable pulsing led on boot complete
     write /sys/class/sec/led/led_pattern 0
+# Set preferred IO scheduler after boot
+    setprop sys.io.scheduler bfq
