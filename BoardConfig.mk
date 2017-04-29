@@ -46,6 +46,9 @@ BOARD_PROVIDES_LIBRIL := true
 BOARD_RIL_CLASS := ../../../device/samsung/ja3gxx/ril
 TARGET_GLOBAL_CFLAGS += -DDISABLE_ASHMEM_TRACKING
 
+# Recovery
+TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/etc/fstab.universal5410
+
 # SELinux
 BOARD_SEPOLICY_DIRS += \
     device/samsung/ja3gxx/sepolicy
