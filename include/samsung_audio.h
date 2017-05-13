@@ -37,7 +37,7 @@
 #define SOUND_PLAYBACK_VOICE_DEVICE 1
 #define SOUND_PLAYBACK_SCO_DEVICE 2
 #define SOUND_DEEP_BUFFER_DEVICE 0
-#define SOUND_HDMI_DEVICE 0
+/*#define SOUND_HDMI_DEVICE 0*/
 
 /* Capture */
 #define SOUND_CAPTURE_DEVICE 3
@@ -85,7 +85,7 @@
  *
  * #define DSP_POWEROFF_DELAY 10 * 1000
  */
-/* #define DSP_POWEROFF_DELAY 0 */
+#define DSP_POWEROFF_DELAY 10 * 1000
 
 /*
  * Some device variants (often T-Mobile) have a separate voice processing IC
