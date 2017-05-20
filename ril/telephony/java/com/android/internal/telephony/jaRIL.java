@@ -28,6 +28,7 @@ import android.os.SystemProperties;
 
 import android.telephony.PhoneNumberUtils;
 import android.telephony.Rlog;
+import android.telephony.SmsManager;
 import android.telephony.SignalStrength;
 
 import com.android.internal.telephony.cdma.CdmaInformationRecords;
