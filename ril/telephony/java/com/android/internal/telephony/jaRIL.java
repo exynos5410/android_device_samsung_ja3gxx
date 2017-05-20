@@ -351,8 +351,7 @@ public class jaRIL extends RIL {
                 break;
             case RIL_UNSOL_WB_AMR_STATE:
                 Rlog.v(RILJ_LOG_TAG,
-                       "jaRIL: ignoring unsolicited response " +
-                       origResponse);
+                       "jaRIL: ignoring unsolicited response " + response);
                 // Do not break
             case RIL_UNSOL_ON_SS_LL:
                 p.setDataPosition(dataPosition);
