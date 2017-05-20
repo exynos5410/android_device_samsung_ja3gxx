@@ -194,7 +194,7 @@
     </path>
 
     <path name="gain-voice-earpiece">
-        <ctl name="EPOUT Digital Volume" value="128" />
+        <ctl name="EPOUT Digital Volume" value="116" />
         <ctl name="EPOUT Input 1 Volume" value="32" />
         <ctl name="EPOUT Input 2 Volume" value="32" />
         <ctl name="EPOUT Input 3 Volume" value="32" />
