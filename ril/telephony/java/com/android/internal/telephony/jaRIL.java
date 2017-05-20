@@ -452,6 +452,12 @@ public class jaRIL extends RIL {
         return response;
     }
 
+    private void constructGsmSendSmsRilRequest(RILRequest rr, String smscPDU, String pdu) {
+        rr.mParcel.writeInt(2);
+        rr.mParcel.writeString(smscPDU);
+        rr.mParcel.writeString(pdu);
+    }
+
     /**
      * The RIL can't handle the RIL_REQUEST_SEND_SMS_EXPECT_MORE
      * request properly, so we use RIL_REQUEST_SEND_SMS instead.
