@@ -54,6 +54,7 @@ PRODUCT_PACKAGES += \
 # Radio
 PRODUCT_PACKAGES += \
     modemloader \
+    libsamsung_symbols \
     libxml2 \
     libprotobuf-cpp-full
 
