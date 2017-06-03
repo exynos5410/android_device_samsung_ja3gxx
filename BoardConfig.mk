@@ -38,7 +38,7 @@ TARGET_AUDIOHAL_VARIANT := samsung
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
 
 # Linker
-LINKER_FORCED_SHIM_LIBS := /system/bin/gpsd|libdmitry.so:/system/lib/libril.so|libsamsung_symbols.so
+LINKER_FORCED_SHIM_LIBS := /system/bin/gpsd|libdmitry.so:/system/lib/libril.so|libsamsung_symbols.so:/system/lib/omx/libOMX.Exynos.AVC.Encoder.so|libsamsung_symbols.so
 
 # Radio
 BOARD_MODEM_TYPE := xmm6360
