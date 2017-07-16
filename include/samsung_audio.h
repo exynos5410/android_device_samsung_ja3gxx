@@ -14,16 +14,16 @@
  * limitations under the License.
  */
 
+#include <telephony/ril.h>
+
 #ifndef SAMSUNG_AUDIO_H
 #define SAMSUNG_AUDIO_H
-
-#include <telephony/ril.h>
 
 /*
  * Sound card specific defines.
  *
  * This is an example configuration for a WolfsonMicro WM1814 sound card.
- * Codec: Vegas
+ * Codec: Arizona
  *
  * If you driver does not support one of the devices, the id should not be
  * defined.
@@ -33,21 +33,19 @@
 #define SOUND_CARD 0
 
 /* Playback */
-#define SOUND_PLAYBACK_DEVICE 0
-#define SOUND_PLAYBACK_VOICE_DEVICE 1
-#define SOUND_PLAYBACK_SCO_DEVICE 2
 #define SOUND_DEEP_BUFFER_DEVICE 0
+#define SOUND_PLAYBACK_DEVICE 0
+#define SOUND_PLAYBACK_SCO_DEVICE 2
 /*#define SOUND_HDMI_DEVICE 0*/
 
 /* Capture */
 #define SOUND_CAPTURE_DEVICE 3
-#define SOUND_CAPTURE_VOICE_DEVICE 1
 #define SOUND_CAPTURE_SCO_DEVICE 2
 
-/* Unusupported
-#define SOUND_CAPTURE_LOOPBACK_AEC_DEVICE 1
-#define SOUND_CAPTURE_HOTWORD_DEVICE 0
-*/
+/* Voice calls */
+#define SOUND_PLAYBACK_VOICE_DEVICE 1
+#define SOUND_CAPTURE_VOICE_DEVICE 1
+
 
 /* Wideband AMR callback */
 #ifndef RIL_UNSOL_SNDMGR_WB_AMR_REPORT
@@ -85,14 +83,7 @@
  *
  * #define DSP_POWEROFF_DELAY 10 * 1000
  */
-#define DSP_POWEROFF_DELAY 10 * 1000
 
-/*
- * Some device variants (often T-Mobile) have a separate voice processing IC
- * (Audience EarSmart xxx).
- * This hooks into the voice call session and enables, configures and disables
- * this extra firmware so RX/TX streams can be routed by the driver.
- */
-/* #define AUDIENCE_EARSMART_IC */
+#define DSP_POWEROFF_DELAY 10 * 1000
 
 #endif // SAMSUNG_AUDIO_H
