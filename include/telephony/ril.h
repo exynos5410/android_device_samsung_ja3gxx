@@ -5861,6 +5861,7 @@ typedef struct {
 #define RIL_UNSOL_GPS_NOTI 11009
 #define RIL_UNSOL_AM 11010
 #define RIL_UNSOL_SAP 11013
+#define RIL_UNSOL_WB_AMR_STATE  11017
 #define RIL_UNSOL_UART 11020
 #define RIL_UNSOL_SIM_PB_READY 11021
 #define RIL_UNSOL_VE 11024
@@ -5881,10 +5882,6 @@ typedef struct {
 #define RIL_UNSOL_IMS_PREFERENCE_CHANGED 11061
 #define RIL_UNSOL_SIM_APPLICATION_REFRESH 11062
 #define RIL_UNSOL_UICC_APPLICATION_STATUS 11063
-
-/* SNDMGR */
-#define RIL_UNSOL_SNDMGR_WB_AMR_REPORT 20017
-#define RIL_UNSOL_SNDMGR_CLOCK_CTRL 20022
 
 /***********************************************************************/
 

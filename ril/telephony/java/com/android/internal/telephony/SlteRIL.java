@@ -54,9 +54,6 @@ public class SlteRIL extends RIL {
     private static final int RIL_UNSOL_AM = 11010;
     private static final int RIL_UNSOL_SIM_PB_READY = 11021;
 
-    private static final int RIL_UNSOL_WB_AMR_STATE = 20017;
-    private static final int RIL_UNSOL_SNDMGR_CLOCK_CTRL = 20022;
-
     private Message mPendingGetSimStatus;
 
     // Number of per-network elements expected in QUERY_AVAILABLE_NETWORKS's response.
@@ -409,8 +406,6 @@ public class SlteRIL extends RIL {
         /* Remap incorrect respones or ignore them */
         switch (origResponse) {
             case RIL_UNSOL_STK_CALL_CONTROL_RESULT:
-            case RIL_UNSOL_WB_AMR_STATE: /* Wideband AMR callback */
-            case RIL_UNSOL_SNDMGR_CLOCK_CTRL: /* Wideband clock change */
             case RIL_UNSOL_DEVICE_READY_NOTI: /* Registrant notification */
             case RIL_UNSOL_SIM_PB_READY: /* Registrant notification */
                 Rlog.v(RILJ_LOG_TAG,
