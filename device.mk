@@ -51,11 +51,22 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libdmitry
 
-# Radio
+# Radio (audio-dependency)
 PRODUCT_PACKAGES += \
-    modemloader \
+    libsecril-client \
+    libsecril-client-sap
+
+# Radio (RIL)
+PRODUCT_PACKAGES += \
+    libril \
+    librilutils \
+    rild \
     libxml2 \
-    libprotobuf-cpp-full
+    libprotobuf-cpp-full \
+    modemloader
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.carrier=unknown
 
 # call the proprietary setup
 $(call inherit-product, vendor/samsung/ja3gxx/ja3gxx-vendor.mk)
