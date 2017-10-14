@@ -20,4 +20,8 @@
 #define BTM_DEF_LOCAL_NAME   "GT-I9500"
 #define BTA_DISABLE_DELAY 1000
 
+/* Required for car kits, use WBS */
+#define BTM_WBS_INCLUDED TRUE
+#define BTIF_HF_WBS_PREFERRED TRUE
+
 #endif
