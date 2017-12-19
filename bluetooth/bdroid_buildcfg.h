@@ -20,8 +20,11 @@
 #define BTM_DEF_LOCAL_NAME   "GT-I9500"
 #define BTA_DISABLE_DELAY 1000
 
-/* Required for car kits, use WBS */
+// Networking, Capturing, Object Transfer
+// MAJOR CLASS: COMPUTER
+// MINOR CLASS: LAPTOP
+#define BTA_DM_COD {0x1A, 0x01, 0x0C}
+
 #define BTM_WBS_INCLUDED TRUE
-#define BTIF_HF_WBS_PREFERRED TRUE
 
 #endif
