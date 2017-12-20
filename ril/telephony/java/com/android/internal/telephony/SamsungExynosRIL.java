@@ -26,6 +26,7 @@ import android.os.Message;
 import android.os.Parcel;
 import android.os.SystemProperties;
 import android.telephony.PhoneNumberUtils;
+import com.android.internal.telephony.cdma.CdmaSmsBroadcastConfigInfo;
 import com.android.internal.telephony.uicc.IccCardApplicationStatus;
 import com.android.internal.telephony.uicc.IccCardStatus;
 import com.android.internal.telephony.uicc.IccUtils;
@@ -328,6 +329,18 @@ public class SamsungExynosRIL extends RIL {
             // Not an OEM response.
             superProcessUnsolicited(p, type, dataPosition, -1);
             return;
+        }
+    }
+
+    @Override
+    public void
+    setCdmaBroadcastConfig(CdmaSmsBroadcastConfigInfo[] configs, Message response) {
+        Rlog.w(RILJ_LOG_TAG, "Ignoring call to 'setCdmaBroadcastConfig'. Not supported.");
+        if (response != null) {
+            CommandException ex = new CommandException(
+                CommandException.Error.REQUEST_NOT_SUPPORTED);
+            AsyncResult.forMessage(response, null, ex);
+            response.sendToTarget();
         }
     }
 }
