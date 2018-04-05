@@ -274,21 +274,21 @@
     </path>
 
     <path name="gain-media-main-mic">
-        <ctl name="IN1L Volume" value="23" />
-        <ctl name="IN1L Digital Volume" value="125" />
-        <ctl name="LHPF1 Input 1 Volume" value="32" />
+        <ctl name="IN1L Volume" value="45" />
+        <ctl name="IN1L Digital Volume" value="134" />
+        <ctl name="LHPF1 Input 1 Volume" value="37" />
     </path>
 
     <path name="gain-voice-main-mic">
-        <ctl name="IN1L Volume" value="23" />
-        <ctl name="IN1L Digital Volume" value="125" />
-        <ctl name="LHPF1 Input 1 Volume" value="32" />
+        <ctl name="IN1L Volume" value="45" />
+        <ctl name="IN1L Digital Volume" value="134" />
+        <ctl name="LHPF1 Input 1 Volume" value="38" />
     </path>
 
     <path name="gain-voice-rec-main-mic">
-        <ctl name="IN1L Volume" value="32" />
-        <ctl name="IN1L Digital Volume" value="128" />
-        <ctl name="LHPF1 Input 1 Volume" value="32" />
+        <ctl name="IN1L Volume" value="45" />
+        <ctl name="IN1L Digital Volume" value="134" />
+        <ctl name="LHPF1 Input 1 Volume" value="38" />
     </path>
 
     <!-- ########## Second Mic ########## -->
@@ -299,21 +299,21 @@
     </path>
 
     <path name="gain-media-second-mic">
-        <ctl name="IN2L Volume" value="22" />
-        <ctl name="IN2L Digital Volume" value="128" />
-        <ctl name="LHPF2 Input 1 Volume" value="32" />
+        <ctl name="IN2L Volume" value="45" />
+        <ctl name="IN2L Digital Volume" value="134" />
+        <ctl name="LHPF2 Input 1 Volume" value="38" />
     </path>
 
     <path name="gain-voice-second-mic">
-        <ctl name="IN2L Volume" value="22" />
-        <ctl name="IN2L Digital Volume" value="128" />
-        <ctl name="LHPF2 Input 1 Volume" value="32" />
+        <ctl name="IN2L Volume" value="45" />
+        <ctl name="IN2L Digital Volume" value="134" />
+        <ctl name="LHPF2 Input 1 Volume" value="38" />
     </path>
 
     <path name="gain-voice-rec-second-mic">
-        <ctl name="IN2L Volume" value="23" />
-        <ctl name="IN2L Digital Volume" value="128" />
-        <ctl name="LHPF2 Input 1 Volume" value="32" />
+        <ctl name="IN2L Volume" value="45" />
+        <ctl name="IN2L Digital Volume" value="134" />
+        <ctl name="LHPF2 Input 1 Volume" value="38" />
     </path>
 
     <!-- ########## Headset Mic ########## -->
@@ -326,21 +326,21 @@
     </path>
 
     <path name="gain-media-headset-mic">
-        <ctl name="IN1R Volume" value="39" />
-        <ctl name="IN1R Digital Volume" value="128" />
-        <ctl name="LHPF1 Input 1 Volume" value="32" />
+        <ctl name="IN1R Volume" value="45" />
+        <ctl name="IN1R Digital Volume" value="134" />
+        <ctl name="LHPF1 Input 1 Volume" value="38" />
     </path>
 
     <path name="gain-voice-headset-mic">
-        <ctl name="IN1R Volume" value="39" />
-        <ctl name="IN1R Digital Volume" value="128" />
-        <ctl name="LHPF1 Input 1 Volume" value="32" />
+        <ctl name="IN1R Volume" value="45" />
+        <ctl name="IN1R Digital Volume" value="134" />
+        <ctl name="LHPF1 Input 1 Volume" value="38" />
     </path>
 
     <path name="gain-voice-rec-headset-mic">
-        <ctl name="IN1R Volume" value="39" />
-        <ctl name="IN1R Digital Volume" value="128" />
-        <ctl name="LHPF1 Input 1 Volume" value="32" />
+        <ctl name="IN1R Volume" value="45" />
+        <ctl name="IN1R Digital Volume" value="134" />
+        <ctl name="LHPF1 Input 1 Volume" value="38" />
     </path>
 
     <!-- ########## Bluetooth In ########## -->
@@ -547,8 +547,8 @@
     <path name="voice-rec-mic">
         <path name="channel-left" />
         <path name="verb-normal" />
-        <path name="enable-second-mic" />
-        <path name="gain-voice-rec-second-mic" />
+        <path name="enable-main-mic" />
+        <path name="gain-voice-rec-main-mic" />
     </path>
 
     <path name="camcorder-mic">
