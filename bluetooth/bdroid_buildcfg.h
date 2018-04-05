@@ -26,5 +26,7 @@
 #define BTA_DM_COD {0x1A, 0x01, 0x0C}
 
 #define BTM_WBS_INCLUDED TRUE
+#define BTIF_HF_WBS_PREFERRED TRUE   /* Use WBS */
+#define BLE_VND_INCLUDED TRUE   /* Vendor specific BLE code */
 
 #endif
