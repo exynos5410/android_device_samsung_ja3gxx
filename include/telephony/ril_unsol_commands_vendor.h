@@ -6,7 +6,7 @@
 ** you may not use this file except in compliance with the License.
 ** You may obtain a copy of the License at
 **
-**     http://www.apache.org/licenses/LICENSE-2.0
+**     http:// www.apache.org/licenses/LICENSE-2.0
 **
 ** Unless required by applicable law or agreed to in writing, software
 ** distributed under the License is distributed on an "AS IS" BASIS,
@@ -14,7 +14,6 @@
 ** See the License for the specific language governing permissions and
 ** limitations under the License.
 */
-
     {SAMSUNG_UNSOL_RESPONSE_BASE, NULL, WAKE_PARTIAL}, // 11000
     {RIL_UNSOL_RELEASE_COMPLETE_MESSAGE, responseVoid, WAKE_PARTIAL}, // 11001
     {RIL_UNSOL_STK_SEND_SMS_RESULT, responseInts, WAKE_PARTIAL}, // 11002
@@ -29,10 +28,10 @@
     {RIL_UNSOL_DUN_PIN_CONTROL_SIGNAL, responseVoid, WAKE_PARTIAL}, // 11011
     {RIL_UNSOL_DATA_SUSPEND_RESUME, responseInts, WAKE_PARTIAL}, // 11012
     {RIL_UNSOL_SAP, responseRaw, WAKE_PARTIAL}, // 11013
-    {11014, NULL, WAKE_PARTIAL}, // 11014
+    {11014, NULL, WAKE_PARTIAL},
     {11015, NULL, WAKE_PARTIAL}, // 11015
     {11016, NULL, WAKE_PARTIAL}, // 11016
-    {11017, NULL, WAKE_PARTIAL}, // 11017
+    {RIL_UNSOL_WB_AMR_STATE, responseInts, WAKE_PARTIAL}, // 11017
     {11018, NULL, WAKE_PARTIAL}, // 11018
     {11019, NULL, WAKE_PARTIAL}, // 11019
     {RIL_UNSOL_UART, responseRaw, WAKE_PARTIAL}, // 11020
@@ -82,9 +81,3 @@
     {RIL_UNSOL_VOICE_RADIO_BEARER_HO_STATUS, responseInts, WAKE_PARTIAL}, // 11064
     {RIL_UNSOL_CLM_NOTI, responseVoid, WAKE_PARTIAL}, // 11065
     {RIL_UNSOL_SIM_ICCID_NOTI, responseString, WAKE_PARTIAL}, // 11066
-#ifdef RIL_UNSOL_SNDMGR_WB_AMR_REPORT
-    {RIL_UNSOL_SNDMGR_WB_AMR_REPORT, responseInts, WAKE_PARTIAL}, // 20017
-#endif
-#ifdef RIL_UNSOL_SNDMGR_CLOCK_CTRL
-    {RIL_UNSOL_SNDMGR_CLOCK_CTRL, responseInts, WAKE_PARTIAL}, // 20022
-#endif
